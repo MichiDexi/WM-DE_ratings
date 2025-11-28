@@ -46,3 +46,31 @@ article {
 h1, h2, h3 {
     margin-top: 0;
 }
+
+ul {
+    list-style-type: square; /* or disc/circle */
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #444;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
