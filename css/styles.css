@@ -1,76 +1,88 @@
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    color: #222;
-    margin: 0;
-    padding: 0;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	background-color: #606070;
+	color: #222;
+	margin: 0;
+	padding: 0;
+}
+main {
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 20px;
+}
+article {
+	background-color: #505060;
+	padding: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
 }
 
-/* Header */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+
+/* Text */
+p {
+	color: #eeeeee;
 }
+h1, h2, h3 {
+	margin-top: 0;
+	color: #ffffff;
+}
+
+
+/* Custom */
+.titlebar {
+	background-color: #333;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	justify-content: center;
+	margin: 0px;
+	margin-bottom: 0px;
+}
+.titlebar h1 {
+	transform: translateY(12px); /* move title slightly down */
+	font-size: 40px;
+}
+.button {
+	font-size: 20px;
+	display: inline-block; 
+	padding: 10px 20px;
+	background-color: #505060;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	font-weight: bold;
+	transition: background-color 0.2s;
+	position: absolute;
+	top: 30px;
+	left: 40px;
+}
+.button:hover {
+	background-color: #606067;
+	text-decoration: none;
+}
+
 
 /* Links */
 a {
-    color: #0077cc;
-    text-decoration: none;
+	color: #0077cc;
+	text-decoration: none;
 }
-
 a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
-/* Main content */
-main {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-}
 
-/* Article blocks */
-article {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+/* Backlinks */
+.backlink {
+	transform: translateY(-60px);
 }
-
-/* Headings */
-h1, h2, h3 {
-    margin-top: 0;
+.backlink a {
+	color: #0077cc;
+	text-decoration: none;
 }
-
-ul {
-    list-style-type: square; /* or disc/circle */
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-nav ul {
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-    background-color: #444;
-    list-style: none;
-    justify-content: center;
-}
-
-nav ul li a {
-    color: white;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
+.backlink a:hover {}
