@@ -89,3 +89,33 @@ a:hover {
 	text-decoration: none;
 }
 .backlink a:hover {}
+
+
+/* Selection */
+.wm-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0px;
+    justify-content: center;
+}
+.wm-card {
+    background: #777788;
+    border-radius: 100px;
+    padding: 0px;
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    transition: transform 0.2s, background 0.2s, width 0.2s;
+    justify-content: center;  /* center vertically */
+}
+.wm-card:hover {
+    background: #9999aa;
+    width: 110px;
+    transform: translateX(-5px) translateY(-15px);
+}
+.wm-card img {
+	height: auto;
+	margin-bottom: 0px;
+}
